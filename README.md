@@ -1,1 +1,15 @@
 # flask_study
+공부 내용을 적어보자  
+## 기본 템플릿  
+```
+FLASK_STUDY
+├── application.py
+├── static
+└── templates
+    └── hello.html
+```
+* templates 디렉토리 아래에 html을 넣은 후 `render_template` 함수를 통해서 불러 올수 있음
+* 디렉토리명이 다르다면 인식이 안됨 
+* html 내부 함수 
+    * `{{value}}`: `template_render`함수 인자로 받아 올 수 있음
+    * `{{url_for()}}`: 해당 url로 이동
