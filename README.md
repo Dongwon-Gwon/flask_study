@@ -3,10 +3,14 @@
 ## 기본 템플릿  
 ```
 FLASK_STUDY
-├── application.py
-├── static
-└── templates
-    └── hello.html
+├── app
+├── model
+├── resources
+├── templates
+├── model
+├── tests
+├── app.py
+└── test_app.py
 ```
 * templates 디렉토리 아래에 html을 넣은 후 `render_template` 함수를 통해서 불러 올수 있음
 * 디렉토리명이 다르다면 인식이 안됨 
