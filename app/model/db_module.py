@@ -1,8 +1,8 @@
-from typing import ClassVar
 import pymysql
 
 class Database():
-    
+
+
     def __init__(self):
         self.db = pymysql.connect(
             host="localhost",
@@ -15,12 +15,12 @@ class Database():
     def execute(self, query, args=()):
         self.cursor.execute(query, args)
     
-    def executeOne(self, query, args={}):
+    def execute_one(self, query, args={}):
         self.cursor.execute(query, args)
         row= self.cursor.fetchone()
         return row
  
-    def executeAll(self, query, args={}):
+    def execute_all(self, query, args={}):
         self.cursor.execute(query, args)
         row= self.cursor.fetchall()
         return row
