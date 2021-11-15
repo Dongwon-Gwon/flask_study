@@ -9,7 +9,7 @@ def client():
 def test_get_admin_all(client):
     response = client.get("/admin/name")
     assert response.status_code == 200
-
+    
 def test_get_admin_by_id(client):
     response = client.get("/admin/name/1")
     assert response.status_code == 200

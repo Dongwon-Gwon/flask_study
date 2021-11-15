@@ -1,4 +1,4 @@
-from app.model.db_module import Database
+from app.models.db_module import Database
 from flask import make_response, jsonify
 
 
