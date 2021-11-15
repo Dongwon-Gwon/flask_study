@@ -22,6 +22,11 @@ $ pytest  # 일시적 테스트
 ```
 $ FLASK_APP=run.py flask run 
 ```
+## 의존성 관리
+```
+pip install -r requirements.txt  # 패키지 설치
+pip freeze >> requirements.txt  # 패키지 리스트 저장
+```
 * templates 디렉토리 아래에 html을 넣은 후 `render_template` 함수를 통해서 불러 올수 있음
 * 디렉토리명이 다르다면 인식이 안됨 
 * html 내부 함수 
